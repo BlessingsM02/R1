@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Roadside_Rescue_2.Views.ProfilePage"
+             Title="ProfilePage"
+             Shell.FlyoutBehavior="Disabled">
+    
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label
+                x:Name="UserEmail"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand" />
+
+            <Button
+                x:Name="LogoutButton"
+                Text="Logout"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                Clicked="LogoutButton_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

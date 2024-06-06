@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Roadside_Rescue_2.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:local="clr-namespace:Roadside_Rescue_2.Views"
+    Title="Roadside_Rescue_2"
+    Shell.FlyoutBehavior="Flyout"
+    >
+
+    <Shell.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="#263E57" 
+                                   StatusBarStyle="LightContent" />
+    </Shell.Behaviors>
+
+
+    <ShellContent
+        Title="Login"
+        ContentTemplate="{DataTemplate local:LoginPage}"
+        Route="LoginPage" />
+
+
+    <TabBar FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:HomePage}"
+            Icon="home"
+            Route="HomePage" />
+        <ShellContent
+            Title="History"
+            ContentTemplate="{DataTemplate local:HistoryPage}"
+            Icon="history"
+            Route="HistoryPage" />
+        <ShellContent
+            Title="Profile"
+            ContentTemplate="{DataTemplate local:ProfilePage}"
+            Icon="profile"
+            Route="ProfilePage" />
+    </TabBar>
+
+</Shell>
