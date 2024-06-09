@@ -6,7 +6,7 @@ namespace Roadside_Rescue_2.ViewModel
 {
     internal class LoginViewModel : INotifyPropertyChanged
     {
-        public string webApiKey = "AIzaSyB5xd5GeOGrG0mIYgJtDmCzwhVQo_M1WUs";
+        public string webApiKey = "AIzaSyD2w51i8GaaXi9ELfEu5__MjIUJCxASZOQ";
         private INavigation _navigation;
         private string userName;
         private string userPassword;

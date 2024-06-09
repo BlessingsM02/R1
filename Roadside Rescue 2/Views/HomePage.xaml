@@ -4,19 +4,12 @@
              x:Class="Roadside_Rescue_2.Views.HomePage"
              Title="HomePage"
              Shell.FlyoutBehavior="Disabled">
+
     <ContentPage.Content>
-        <Grid
-            BackgroundColor="#263E57"
-            HorizontalOptions="FillAndExpand"
-            VerticalOptions="FillAndExpand">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <StackLayout Grid.Row="0" HorizontalOptions="Center">
-                <Button Text="Get Location" Clicked="OnGetLocationClicked"/>
-                <Label x:Name="LocationLabel" Text="Location will be displayed here" HorizontalOptions="Center" />
-            </StackLayout>
-        </Grid>
+        <StackLayout Padding="10">
+            <Label Text="Working Status" FontSize="Medium" />
+            <Switch x:Name="WorkingSwitch" Toggled="OnWorkingToggled" />
+            <Label x:Name="LocationLabel" Text="Location: Not Available" FontSize="Medium" Margin="0,20,0,0" />
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
